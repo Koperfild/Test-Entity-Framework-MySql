@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a5ee9a611105407589044316d71ee745" Name="Diagram1" ZoomLevel="72" >
+        <EntityTypeShape EntityType="Model1.auditoriums" Width="1.5" PointX="0.75" PointY="4" />
+        <EntityTypeShape EntityType="Model1.groups" Width="1.5" PointX="6" PointY="11.75" />
+        <EntityTypeShape EntityType="Model1.groupswithsubjects" Width="1.5" PointX="8.25" PointY="3.875" />
+        <EntityTypeShape EntityType="Model1.hours" Width="1.5" PointX="3.75" PointY="7.25" />
+        <EntityTypeShape EntityType="Model1.lectures" Width="1.5" PointX="3" PointY="3.375" />
+        <EntityTypeShape EntityType="Model1.semesters" Width="1.5" PointX="3.75" PointY="12.25" />
+        <EntityTypeShape EntityType="Model1.students" Width="1.5" PointX="8.25" PointY="11.5" />
+        <EntityTypeShape EntityType="Model1.subjects" Width="1.5" PointX="6" PointY="3" />
+        <EntityTypeShape EntityType="Model1.teachers" Width="1.5" PointX="0.75" PointY="9.375" />
+        <EntityTypeShape EntityType="Model1.type_of_final_test" Width="1.5" PointX="3.75" PointY="1" />
+        <EntityTypeShape EntityType="Model1.type_of_lesson" Width="1.5" PointX="3.75" PointY="9.375" />
+        <AssociationConnector Association="Model1.auditorium_id" />
+        <AssociationConnector Association="Model1.special_auditorium" />
+        <AssociationConnector Association="Model1.fk_group_id" />
+        <AssociationConnector Association="Model1.group_id" />
+        <AssociationConnector Association="Model1.semester_id" />
+        <AssociationConnector Association="Model1.fk_subject_id" />
+        <AssociationConnector Association="Model1.hours1" />
+        <AssociationConnector Association="Model1.subject_id" />
+        <AssociationConnector Association="Model1.teacher_id" />
+        <AssociationConnector Association="Model1.type_of__lesson" />
+        <AssociationConnector Association="Model1.type_of_final_test1" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="411503eb61064600ba68b20d7e6e9fbf" Name="Diagram1" ZoomLevel="72" >
+        <EntityTypeShape EntityType="Model1.actor" Width="1.5" PointX="12.75" PointY="16.25" />
+        <EntityTypeShape EntityType="Model1.address" Width="1.5" PointX="5.25" PointY="5.625" />
+        <EntityTypeShape EntityType="Model1.category" Width="1.5" PointX="12.75" PointY="19.375" />
+        <EntityTypeShape EntityType="Model1.city" Width="1.5" PointX="3" PointY="6.125" />
+        <EntityTypeShape EntityType="Model1.country" Width="1.5" PointX="0.75" PointY="6.375" />
+        <EntityTypeShape EntityType="Model1.customer" Width="1.5" PointX="7.5" PointY="5.5" />
+        <EntityTypeShape EntityType="Model1.film" Width="1.5" PointX="12.75" PointY="11" />
+        <EntityTypeShape EntityType="Model1.film_actor" Width="1.5" PointX="15" PointY="12.25" />
+        <EntityTypeShape EntityType="Model1.film_category" Width="1.5" PointX="15" PointY="15.25" />
+        <EntityTypeShape EntityType="Model1.film_text" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Model1.inventory" Width="1.5" PointX="15" PointY="2" />
+        <EntityTypeShape EntityType="Model1.language" Width="1.5" PointX="10.5" PointY="12.25" />
+        <EntityTypeShape EntityType="Model1.payment" Width="1.5" PointX="15" PointY="5.75" />
+        <EntityTypeShape EntityType="Model1.rental" Width="1.5" PointX="12.75" PointY="5.625" />
+        <EntityTypeShape EntityType="Model1.staff" Width="1.5" PointX="10.5" PointY="5.25" />
+        <EntityTypeShape EntityType="Model1.store" Width="1.5" PointX="12.75" PointY="1.875" />
+        <EntityTypeShape EntityType="Model1.actor_info" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Model1.customer_list" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Model1.film_list" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Model1.nicer_but_slower_film_list" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Model1.sales_by_film_category" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="Model1.staff_list" Width="1.5" PointX="0.75" PointY="9.75" />
+        <AssociationConnector Association="Model1.fk_film_actor_actor" />
+        <AssociationConnector Association="Model1.fk_address_city" />
+        <AssociationConnector Association="Model1.fk_customer_address" />
+        <AssociationConnector Association="Model1.fk_staff_address" />
+        <AssociationConnector Association="Model1.fk_store_address" />
+        <AssociationConnector Association="Model1.fk_film_category_category" />
+        <AssociationConnector Association="Model1.fk_city_country" />
+        <AssociationConnector Association="Model1.fk_customer_store" />
+        <AssociationConnector Association="Model1.fk_payment_customer" />
+        <AssociationConnector Association="Model1.fk_rental_customer" />
+        <AssociationConnector Association="Model1.fk_film_actor_film" />
+        <AssociationConnector Association="Model1.fk_film_category_film" />
+        <AssociationConnector Association="Model1.fk_film_language" />
+        <AssociationConnector Association="Model1.fk_film_language_original" />
+        <AssociationConnector Association="Model1.fk_inventory_film" />
+        <AssociationConnector Association="Model1.fk_inventory_store" />
+        <AssociationConnector Association="Model1.fk_rental_inventory" />
+        <AssociationConnector Association="Model1.fk_payment_rental" />
+        <AssociationConnector Association="Model1.fk_payment_staff" />
+        <AssociationConnector Association="Model1.fk_rental_staff" />
+        <AssociationConnector Association="Model1.fk_staff_store" />
+        <AssociationConnector Association="Model1.fk_store_staff" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

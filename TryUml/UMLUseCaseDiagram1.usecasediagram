@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="1250c133-c618-4b53-8b5b-d1b10f6ef785" name="UMLUseCaseDiagram1" linkedPackageId="6c32c785-36f2-4391-8fed-3b8cfcffdb36" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="84961fb8-1dad-46b0-af9c-0c7c5e0b5800" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3276b41e-5b12-4936-93b0-223ef7c405cf" />
+        <targetEnds>
+          <association Id="048a6f21-1080-42bc-a4a6-075ccef7639c" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Create lecture" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="92e661d0-194c-4c3d-b3d8-f3d497b7a700" LastKnownName="Create lecture" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a987c822-1c7d-4161-b5e1-09ff0fe4a9a0" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="81dec654-2e22-4e58-a68b-de91e5017f67" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aaa89923-f2f7-4f33-bb3a-968fafd56bfa" name="Create lecture" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ffaae7f6-62a9-41e7-8f0c-d225fa2a6a48" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="02a7f4f1-08fb-4fea-bfe5-ecaf1d44aa46" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="92e661d0-194c-4c3d-b3d8-f3d497b7a700" name="Create lecture" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="22398259-95b3-4473-aacb-cbe3922fa2d1" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="494162f7-917f-4351-8505-b82bbcec9953" name="View lectures for group" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="03c00123-50bd-425e-9e08-ae6939456846" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9b65ee05-39af-4d57-a750-789dcc3eec32" name="View lectures for date" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8c5955fe-0c30-4efa-b373-888486516845" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="a9d2cd07-cc74-43b0-a735-af296bda05f2" name="operator" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="78fd6c78-ba16-473b-a8c8-cc587d526164" />
+        <targetEnds>
+          <association Id="17aea0ab-c066-4949-b6d6-f8bdde3027cd" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Add subject with its hours" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f07003e1-b9db-4931-b3e0-f91fa3907529" LastKnownName="Add subject with its hours" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3cec7527-578a-4317-95ac-7c9a90e81d97" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="802a424b-2908-4c9e-99c5-b658d62099cf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c98d6893-2586-4e17-8e9c-a14bae175e06" name="Add subject with its hours" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c84c5e53-83b6-4162-8723-3aa4d406cda5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="27d4c3a4-fc4f-4134-9023-fe089e33ef4d" />
+          </association>
+          <association Id="b6674190-8c2f-406a-aae1-cd2ded6e2260" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Connect group with subject" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="691f5e94-88db-40fc-8b4a-cf83329c4867" LastKnownName="Connect group with subject" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c438c722-8baa-4da4-b408-6f4a57d1ca2f" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="f1bfbddf-f140-4f8f-8446-156554dcf6d1" name="Lower" value="1">
+                      <elementDefinition Id="e768fc71-b192-484d-98bd-b604cf4f0e16" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="1d7ea01c-83c0-4850-bea9-5f7bee2c5ef4" name="Upper" value="1">
+                      <elementDefinition Id="f9a4cdfd-ad51-46ee-97b5-1a30f57bdbdb" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="fd603d87-1cc3-49ce-bbbd-7871f058211e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a1d40219-1997-4bf3-bc81-661338197d14" name="Connect group with subject" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9b5ee435-dce0-45f7-af9c-c3060123245e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ebff03e8-96c9-46b5-8af6-9e5fe1f6f787" />
+          </association>
+          <association Id="301bf8e5-7720-4996-87f2-3671a417c095" isDerived="false" sourceEndRoleName="operator" targetEndRoleName="Add holiday days(weekend and military department day)" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ca0654e9-c1eb-42e0-adcb-fc7213c64ac2" LastKnownName="Add holiday days(weekend and military department day)" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ae67a6f4-110b-41cd-bbac-0af784eadcf3" name="operator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5e8210c5-dc72-477e-8fb6-380cac815e89" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f93b761b-0a78-4e3f-8a31-9f39ab2d05bc" name="Add holiday days(weekend and military department day)" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="128d6053-dc05-41bd-96cf-daa876a7a9c8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="05e558b7-190b-452d-a773-6a5e1fd3bc30" />
+          </association>
+          <association Id="e5db0f45-5aef-4140-8448-4734441da458" isDerived="false" sourceEndRoleName="operator" targetEndRoleName="Input subject to timetable (from first week or from specified date/week number) with specifying week day or not" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ffbaf9aa-9605-4365-9e0a-36085cdd3c5b" LastKnownName="Add subject to timetable (from first week or from specified date/week number) with specifying week day or not" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="be3bc0fe-b8bd-47e5-87c2-b769c6ea6624" name="operator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d5f0ba72-5b45-4760-837e-e91e0c01be8e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f269d4e6-a30b-4ff1-92f0-c52303ad001f" name="Input subject to timetable (from first week or from specified date/week number) with specifying week day or not" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cd65000d-a8a3-4038-9855-34d789bc9bbb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="89959ae9-fd85-4866-b726-e04bae5d3037" />
+          </association>
+          <association Id="c61c8397-e2fe-4a50-9274-f8bf6d125894" isDerived="false" sourceEndRoleName="operator" targetEndRoleName="Add and edit teachers" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c073a12c-24c8-47de-9ce1-41f3eecc327f" LastKnownName="Add and edit teachers" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1885f863-8c4e-4994-9381-018c60049d17" name="operator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5620cdf9-5a50-4316-bd0c-de18f532eb51" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b061e0c4-eed5-437d-a9cc-f2a262be1d49" name="Add and edit teachers" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0159c3e9-637d-4996-abc7-462294fbb4b9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8338e6cf-69b7-4add-b0ac-f0883c240dee" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f07003e1-b9db-4931-b3e0-f91fa3907529" name="Add subject with its hours" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d66b3e51-c365-4ea2-8b13-da8085f2c3db" />
+        <additions>
+          <include Id="7a092abb-4bbf-4559-a925-dcf4c573a72e">
+            <useCaseMoniker Id="c66aaa4d-bb5c-407e-8510-9983bb878d02" LastKnownName="Check auditorium to fit students quantity" />
+            <elementDefinition Id="b1d63bea-694e-48e3-81de-5b69367b6be8" />
+          </include>
+          <include Id="da89f8bc-0868-4f8d-bb5d-0ff7b9d6e5c8">
+            <useCaseMoniker Id="f441505a-baf7-4f7d-b64d-baaebd084f7e" LastKnownName="Check if subject needs special auditorium" />
+            <elementDefinition Id="349c081a-2ff7-4e25-a578-c8304ff09ab4" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="691f5e94-88db-40fc-8b4a-cf83329c4867" name="Connect group with subject" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1d566f33-c5b9-46d3-9134-0b97712b1a0c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ffbaf9aa-9605-4365-9e0a-36085cdd3c5b" name="Add subject to timetable (from first week or from specified date/week number) with specifying week day or not" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="90b1ebcc-107a-4359-b094-102f63a84c79" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="24faf500-85c5-4719-97dc-73d99f1ac643" name="Teacher/student" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2fe48306-9d49-495a-89b0-2fb44f447c74" />
+        <targetEnds>
+          <association Id="2d3e4a11-f4e4-45b4-9a46-c853599b4cb7" isDerived="false" sourceEndRoleName="Teacher" targetEndRoleName="View lectures for date1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="845b01d0-77c1-4925-b59d-ef103513b3e1" LastKnownName="View lectures for date1" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="48b29525-5914-4b44-a0c0-48fb0faff006" name="Teacher" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="07465a8c-b069-40b6-a3fd-7f04c91b026e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="baf740af-20cf-4acb-8c6d-937e5b669072" name="View lectures for date1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="83f3892b-f16d-4dd1-92df-a37102960f4e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="68af81b3-dac8-40c7-b78c-7b02d34ca4d1" />
+          </association>
+          <association Id="4850b3ec-b9e0-408b-8d49-e19786ec4918" isDerived="false" sourceEndRoleName="Teacher" targetEndRoleName="Draw week timetable view" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f0df1324-2542-4985-9c33-a9b4935bcc03" LastKnownName="Draw week timetable view" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fd1bc396-824b-4b0c-ae64-351536d6b4be" name="Teacher" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4003e62c-ee8d-4fec-941f-1872071850f2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9d79f7ab-2b82-4692-bcfd-0324e284998e" name="Draw week timetable view" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cb7d142f-860a-497b-8620-dda54786c32c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="477a4cfa-b81c-4d80-82bc-0d191847436a" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="845b01d0-77c1-4925-b59d-ef103513b3e1" name="View lectures for date1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="634818d9-1d13-49ed-900f-26c901b13604" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ca0654e9-c1eb-42e0-adcb-fc7213c64ac2" name="Add holiday days(weekend and military department day)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9465002d-231f-4d23-9057-309fe5b7281c" />
+        <subjects>
+          <subsystemMoniker Id="2aec8a5c-b63a-461d-bf47-9d470b6c4033" LastKnownName="Restrictions" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c66aaa4d-bb5c-407e-8510-9983bb878d02" name="Check auditorium to fit students quantity" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6533f90a-0a05-4eec-953a-0bab8e99f99b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f441505a-baf7-4f7d-b64d-baaebd084f7e" name="Check if subject needs special auditorium" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="70180e45-6fd4-4413-b791-24a041ce3c6d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f0df1324-2542-4985-9c33-a9b4935bcc03" name="Draw week timetable view" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8bab2181-1b7f-4dbc-9b5e-17e062a80f4a" />
+        <additions>
+          <include Id="56928d34-9451-4e95-9a32-7386d688f786">
+            <useCaseMoniker Id="8d813a52-0da7-4a80-98d2-4d8fd53c38e9" LastKnownName="Check if there are different subjects at the same position at different dates (blink subjs or one subject after another in semester)" />
+            <elementDefinition Id="cfeb4fd2-91cf-4398-8e9f-5494f3346dc5" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8d813a52-0da7-4a80-98d2-4d8fd53c38e9" name="Check if there are different subjects at the same position at different dates (blink subjs or one subject after another in semester)" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="185d2e7b-2301-4748-8574-fc3786afa052" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="04c1d040-72fd-4d0c-9e90-3e285b7d351b" name="view list of nonfull semester subject" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="89d29b5e-8177-4343-8ff0-6845c39feab7" />
+        <extendedCases>
+          <extend Id="4ece5034-24de-404a-9f7c-e838b26c9727">
+            <useCaseMoniker Id="ffbaf9aa-9605-4365-9e0a-36085cdd3c5b" LastKnownName="Add subject to timetable (from first week or from specified date/week number) with specifying week day or not" />
+            <elementDefinition Id="b0ed233d-8ee4-4c37-bbc8-36c8c0dd2723" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b6ef323b-811f-4456-9cd1-67e945104b7f" name="add to any free position in week" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0c48d969-9078-492a-9c4c-739a8784245b" />
+        <extendedCases>
+          <extend Id="3f17a969-9c19-4683-96d0-8e27076cdeb3">
+            <useCaseMoniker Id="04c1d040-72fd-4d0c-9e90-3e285b7d351b" LastKnownName="view list of nonfull semester subject" />
+            <elementDefinition Id="7ab46bac-09c0-4575-abcb-ccce86636efb" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1af42bdf-fa04-4063-9ee0-e093bf01ceb1" name="DONE!&#xD;&#xA;Specify auditorium from list of free auditoriums" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5ff0ccf3-7db6-4363-896f-78c34b0977c2" />
+        <extendedCases>
+          <extend Id="1da8a79e-3c30-4d66-9bd5-d8e32d2b2718">
+            <useCaseMoniker Id="ffbaf9aa-9605-4365-9e0a-36085cdd3c5b" LastKnownName="Add subject to timetable (from first week or from specified date/week number) with specifying week day or not" />
+            <elementDefinition Id="e6785d52-a05e-45af-8ee8-681e9d20acfb" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1f2a3cf2-68e7-4ee6-a1b0-07c1ab27797c" name="Если лекции чередуются с практикой, то вывести в одном поле через /" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d37f8fc3-64fa-44e1-834a-c06e2886e340" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a721a011-d29d-4774-aa11-2686e8bd6490" name="Make limit of lectures per day" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2c288880-5dc9-4817-b493-0dc3cc494dda" />
+        <subjects>
+          <subsystemMoniker Id="2aec8a5c-b63a-461d-bf47-9d470b6c4033" LastKnownName="Restrictions" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4e9cfd75-22b4-4428-a3fd-c709c95322c6" name="Make edit group button on Groups tab" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5caa1c32-0934-4bdc-b9cf-ccffc2670ed3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c073a12c-24c8-47de-9ce1-41f3eecc327f" name="Add and edit teachers" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="71e8308c-9fcf-4041-b6f2-5b839d0d767d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="2aec8a5c-b63a-461d-bf47-9d470b6c4033" name="Restrictions" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9eb5d949-9f1a-4927-8d9f-7a316df3315a" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="6c32c785-36f2-4391-8fed-3b8cfcffdb36" name="TryUml">
+    <elementDefinition Id="a1917967-155b-4e6b-9b2a-81b31d19fe47" />
+    <profileInstances>
+      <packageHasProfileInstances Id="0077c958-3329-4fd5-b684-c38a7587c3a7">
+        <profileInstance Id="458c043b-d624-43ce-aef1-98dde6d18942" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="a3e7199b-b4dd-45d9-a471-020b79876ea2">
+        <profileInstance Id="b2e9dd6f-fb14-416f-88c4-c9869f7c868e" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

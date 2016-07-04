@@ -1,0 +1,1259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="a1917967-155b-4e6b-9b2a-81b31d19fe47"
+  name="TryUml" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="4a61498b-d12e-4edc-9f81-3dcf4c924c6a"
+        name="Kurs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="457357f8-f701-4793-b01f-00192f81e8c7"
+            isDerived="false"
+            sourceEndRoleName="Kurs"
+            targetEndRoleName="Gruppa"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="bd24ea89-5251-4bfa-b9eb-eb78796cd5b3"
+              LastKnownName="Group"
+              LastKnownLocation="TryUml.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="06f22417-aa21-4f05-be14-ec32e3b1bf94"
+                  name="Kurs"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ea59234b-6adf-4666-9a25-43ae6b6a34b3"
+                  name="Gruppa"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="3fd4f4ba-4a1d-482e-9611-abe367a2b0e3"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="20a09fe7-afb8-4cd0-8c95-56188f669e87"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="906a3be0-3bd5-473b-a72d-9faab3ab7308"
+            name="ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bd24ea89-5251-4bfa-b9eb-eb78796cd5b3"
+        name="Group"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="df175c28-2e9d-41ff-abd2-7fc39dae3c2a"
+            isDerived="false"
+            sourceEndRoleName="Gruppa"
+            targetEndRoleName="Student"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b9d6388c-59e7-46a1-8a82-0dc7d389ea65"
+              LastKnownName="Student"
+              LastKnownLocation="TryUml.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0de4ff41-06e4-43be-8070-19e3ac684772"
+                  name="Gruppa"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1e7bf81d-ca36-4c8f-ab07-e11fc32c0aed"
+                  name="Student"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8e54a404-4683-4ed8-9e59-a011c22509e0"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6a3e2705-ebdd-457a-a4db-ad55f65ec75c"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="af089043-7d71-43e9-82dd-f943b8e6bee8"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="TryUml.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="13820bc2-fe88-46ca-adb8-1a0fee06aaed"
+            name="Has schedule"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="TryUml.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b9d6388c-59e7-46a1-8a82-0dc7d389ea65"
+        name="Student"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="3276b41e-5b12-4936-93b0-223ef7c405cf"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="02a7f4f1-08fb-4fea-bfe5-ecaf1d44aa46"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Create lecture"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="22398259-95b3-4473-aacb-cbe3922fa2d1"
+              LastKnownName="Create lecture"
+              LastKnownLocation="TryUml.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="81dec654-2e22-4e58-a68b-de91e5017f67"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ffaae7f6-62a9-41e7-8f0c-d225fa2a6a48"
+                  name="Create lecture"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="22398259-95b3-4473-aacb-cbe3922fa2d1"
+        name="Create lecture"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="03c00123-50bd-425e-9e08-ae6939456846"
+        name="View lectures for group"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8c5955fe-0c30-4efa-b373-888486516845"
+        name="View lectures for date"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1eb53f24-0c68-4a74-8eb1-56acc3505a60"
+        name="Auditorium"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="d33c9a4e-b572-4667-a952-3baeaeb1e0b8"
+            isDerived="false"
+            sourceEndRoleName="Kabinet"
+            targetEndRoleName="Prepod"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="caa987e4-d934-49a7-a85e-afb0026725ec"
+              LastKnownName="Teacher"
+              LastKnownLocation="TryUml.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4b70d889-1197-4f3a-9e88-b13a412215b9"
+                  name="Kabinet"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="78c7350c-ae23-4792-b684-75c0540ea352"
+                  name="Prepod"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e8aac4ef-6a6e-4122-b68a-4a4ca1a4cec2"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a592500d-6105-4ccc-8515-ef8febb857f7"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f7a788b2-82f6-43c3-bf2e-ad0e07e655cd"
+            isDerived="false"
+            sourceEndRoleName="Auditorium"
+            targetEndRoleName="Lecture"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c44d9c34-c15f-45ef-b814-4ce9e027e3f6"
+              LastKnownName="Lecture"
+              LastKnownLocation="TryUml.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="20101bcb-feb7-495e-b205-ceadbbc17c1f"
+                  name="Auditorium"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5f17ad9a-6f29-4fce-afac-6faa02e11b3c"
+                  name="Lecture"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1d8c9a0b-c069-493d-a24d-c0b3f030ff7c"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3aa512cb-4cc0-4e29-a6e0-2db6399c0056"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="56cb29fd-d4d4-4879-b121-2223d82960a4"
+            name="ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="caa987e4-d934-49a7-a85e-afb0026725ec"
+        name="Teacher"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f4b14d2e-ad67-4d4d-9057-947556c67bf6"
+        name="Subject"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="a228dfcc-3337-41d0-8ff9-f0ff2c7069a1"
+            isDerived="false"
+            sourceEndRoleName="Subject"
+            targetEndRoleName="Lecture"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c44d9c34-c15f-45ef-b814-4ce9e027e3f6"
+              LastKnownName="Lecture"
+              LastKnownLocation="TryUml.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1ff1db06-abf9-45e1-bf08-71ecdb091ff4"
+                  name="Subject"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="238211dd-6230-4a78-972d-b0548a955fa3"
+                  name="Lecture"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="142b8c3b-9a68-4c85-9ef1-0345ba845a7f"
+            name="ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c44d9c34-c15f-45ef-b814-4ce9e027e3f6"
+        name="Lecture"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="d5603015-4b11-4236-a332-c32070c58f20"
+            name="LectureId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1fa7f260-dc57-4182-9760-9eb92076b006"
+            name="Subject_id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e3e643f4-9cf3-4de7-8ff9-1796359d0c73"
+            name="Auditorium_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4a70cb08-b96d-491a-8c1e-3051a43cb383"
+            name="Date"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="69ce71f7-3368-43db-bbce-7779593669a6"
+            name="TimeStart"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4a651299-9eb4-4eb8-9a04-0224d036d78c"
+            name="TimeEnd"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="78fd6c78-ba16-473b-a8c8-cc587d526164"
+        name="operator"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="27d4c3a4-fc4f-4134-9023-fe089e33ef4d"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Add subject with its hours"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d66b3e51-c365-4ea2-8b13-da8085f2c3db"
+              LastKnownName="Add subject with its hours"
+              LastKnownLocation="TryUml.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="802a424b-2908-4c9e-99c5-b658d62099cf"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c84c5e53-83b6-4162-8723-3aa4d406cda5"
+                  name="Add subject with its hours"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ebff03e8-96c9-46b5-8af6-9e5fe1f6f787"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Connect group with subject"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1d566f33-c5b9-46d3-9134-0b97712b1a0c"
+              LastKnownName="Connect group with subject"
+              LastKnownLocation="TryUml.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fd603d87-1cc3-49ce-bbbd-7871f058211e"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e768fc71-b192-484d-98bd-b604cf4f0e16"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f9a4cdfd-ad51-46ee-97b5-1a30f57bdbdb"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9b5ee435-dce0-45f7-af9c-c3060123245e"
+                  name="Connect group with subject"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="05e558b7-190b-452d-a773-6a5e1fd3bc30"
+            isDerived="false"
+            sourceEndRoleName="operator"
+            targetEndRoleName="Add holiday days(weekend and military department day)"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="9465002d-231f-4d23-9057-309fe5b7281c"
+              LastKnownName="Add holiday days(weekend and military department day)"
+              LastKnownLocation="TryUml.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5e8210c5-dc72-477e-8fb6-380cac815e89"
+                  name="operator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="128d6053-dc05-41bd-96cf-daa876a7a9c8"
+                  name="Add holiday days(weekend and military department day)"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="89959ae9-fd85-4866-b726-e04bae5d3037"
+            isDerived="false"
+            sourceEndRoleName="operator"
+            targetEndRoleName="Input subject to timetable (from first week or from specified date/week number) with specifying week day or not"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="90b1ebcc-107a-4359-b094-102f63a84c79"
+              LastKnownName="Add subject to timetable (from first week or from specified date/week number) with specifying week day or not"
+              LastKnownLocation="TryUml.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d5f0ba72-5b45-4760-837e-e91e0c01be8e"
+                  name="operator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cd65000d-a8a3-4038-9855-34d789bc9bbb"
+                  name="Input subject to timetable (from first week or from specified date/week number) with specifying week day or not"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8338e6cf-69b7-4add-b0ac-f0883c240dee"
+            isDerived="false"
+            sourceEndRoleName="operator"
+            targetEndRoleName="Add and edit teachers"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="71e8308c-9fcf-4041-b6f2-5b839d0d767d"
+              LastKnownName="Add and edit teachers"
+              LastKnownLocation="TryUml.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5620cdf9-5a50-4316-bd0c-de18f532eb51"
+                  name="operator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0159c3e9-637d-4996-abc7-462294fbb4b9"
+                  name="Add and edit teachers"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d66b3e51-c365-4ea2-8b13-da8085f2c3db"
+        name="Add subject with its hours"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="b1d63bea-694e-48e3-81de-5b69367b6be8">
+            <useCaseMoniker
+              Id="6533f90a-0a05-4eec-953a-0bab8e99f99b"
+              LastKnownName="Check auditorium to fit students quantity"
+              LastKnownLocation="TryUml.uml" />
+          </include>
+          <include
+            Id="349c081a-2ff7-4e25-a578-c8304ff09ab4">
+            <useCaseMoniker
+              Id="70180e45-6fd4-4413-b791-24a041ce3c6d"
+              LastKnownName="Check if subject needs special auditorium"
+              LastKnownLocation="TryUml.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="9b6fa728-7663-40e2-b3d9-161c118e2ac4"
+        name="Actor2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="803d33c2-06d5-4fcd-8d14-fa75780212bc"
+        name="Actor3"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1d566f33-c5b9-46d3-9134-0b97712b1a0c"
+        name="Connect group with subject"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="90b1ebcc-107a-4359-b094-102f63a84c79"
+        name="Add subject to timetable (from first week or from specified date/week number) with specifying week day or not"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="2fe48306-9d49-495a-89b0-2fb44f447c74"
+        name="Teacher/student"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="68af81b3-dac8-40c7-b78c-7b02d34ca4d1"
+            isDerived="false"
+            sourceEndRoleName="Teacher"
+            targetEndRoleName="View lectures for date1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="634818d9-1d13-49ed-900f-26c901b13604"
+              LastKnownName="View lectures for date1"
+              LastKnownLocation="TryUml.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="07465a8c-b069-40b6-a3fd-7f04c91b026e"
+                  name="Teacher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="83f3892b-f16d-4dd1-92df-a37102960f4e"
+                  name="View lectures for date1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="477a4cfa-b81c-4d80-82bc-0d191847436a"
+            isDerived="false"
+            sourceEndRoleName="Teacher"
+            targetEndRoleName="Draw week timetable view"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8bab2181-1b7f-4dbc-9b5e-17e062a80f4a"
+              LastKnownName="Draw week timetable view"
+              LastKnownLocation="TryUml.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4003e62c-ee8d-4fec-941f-1872071850f2"
+                  name="Teacher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cb7d142f-860a-497b-8620-dda54786c32c"
+                  name="Draw week timetable view"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="634818d9-1d13-49ed-900f-26c901b13604"
+        name="View lectures for date1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="f219d79b-263f-44c2-95ef-79de6a58c03d"
+        name="Student"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="b1dcbd7e-47df-4013-b8e0-a69ef39a08ad"
+            isDerived="false"
+            sourceEndRoleName="Student"
+            targetEndRoleName="View lectures for date1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="634818d9-1d13-49ed-900f-26c901b13604"
+              LastKnownName="View lectures for date1"
+              LastKnownLocation="TryUml.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="381635fd-8c89-41e2-bbaf-d2c686d1718f"
+                  name="Student"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0f33e374-d87d-4001-b98c-20f4de234b9b"
+                  name="View lectures for date1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="c00af2b9-9318-4a15-8ebb-0284193fa5ec"
+        name="Activity1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="c36dda31-8ab9-47a7-86d6-99147b832d84"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="caf66924-956b-4783-9c68-d8a5dfecc324"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3ead791f-e77f-450c-9680-f62fdad177ef"
+                  LastKnownName="Choose free days"
+                  LastKnownLocation="TryUml.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="3ead791f-e77f-450c-9680-f62fdad177ef"
+            name="Choose free days"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="cc654aee-cff3-4265-aa3d-e9c42b105b97"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="c320465a-d990-4ff3-b921-715031f1e79c"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="TryUml.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="c320465a-d990-4ff3-b921-715031f1e79c"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b51f4163-42dc-4657-8bc2-53bbd59f38fd"
+                guard="0 is chosen"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3ead791f-e77f-450c-9680-f62fdad177ef"
+                  LastKnownName="Choose free days"
+                  LastKnownLocation="TryUml.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="4e7eb846-9499-4ebd-bac5-10168e00f0ba"
+            name="Choose Group or "
+            isLeaf="false" />
+          <opaqueAction
+            Id="31298285-7114-4e54-99e4-215566807778"
+            name="Input subject name and hours"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="43fa335a-7dd5-41f4-8cbe-9a96d221a16a"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="1c2ea717-7444-4952-b7d3-ec437b51d247"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="TryUml.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <initialNode
+            Id="490ddb61-304a-4347-873d-acd43cddfa08"
+            name="Initial2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fd5f5709-ca30-4879-9a1d-49f8a0f37dcd"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="31298285-7114-4e54-99e4-215566807778"
+                  LastKnownName="Input subject name and hours"
+                  LastKnownLocation="TryUml.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="5ec4a032-e760-4aba-891b-31b0b4626899"
+            isLeaf="false" />
+          <decisionNode
+            Id="1c2ea717-7444-4952-b7d3-ec437b51d247"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="df7063a9-2795-4090-b22f-dab1de130234"
+                guard="name or hours are empty"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="31298285-7114-4e54-99e4-215566807778"
+                  LastKnownName="Input subject name and hours"
+                  LastKnownLocation="TryUml.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="e027be38-ae8b-4de7-8f96-192a16457a0d"
+                guard="Ok"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="85f63be2-7bc7-4b91-8003-68eeba8626fe"
+                  LastKnownName="Decision3"
+                  LastKnownLocation="TryUml.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode
+            Id="85f63be2-7bc7-4b91-8003-68eeba8626fe"
+            name="Decision3"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9465002d-231f-4d23-9057-309fe5b7281c"
+        name="Add holiday days(weekend and military department day)"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="9eb5d949-9f1a-4927-8d9f-7a316df3315a"
+            LastKnownName="Restrictions"
+            LastKnownLocation="TryUml.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6533f90a-0a05-4eec-953a-0bab8e99f99b"
+        name="Check auditorium to fit students quantity"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="70180e45-6fd4-4413-b791-24a041ce3c6d"
+        name="Check if subject needs special auditorium"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8bab2181-1b7f-4dbc-9b5e-17e062a80f4a"
+        name="Draw week timetable view"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="cfeb4fd2-91cf-4398-8e9f-5494f3346dc5">
+            <useCaseMoniker
+              Id="185d2e7b-2301-4748-8574-fc3786afa052"
+              LastKnownName="Check if there are different subjects at the same position at different dates (blink subjs or one subject after another in semester)"
+              LastKnownLocation="TryUml.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="185d2e7b-2301-4748-8574-fc3786afa052"
+        name="Check if there are different subjects at the same position at different dates (blink subjs or one subject after another in semester)"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="89d29b5e-8177-4343-8ff0-6845c39feab7"
+        name="view list of nonfull semester subject"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="b0ed233d-8ee4-4c37-bbc8-36c8c0dd2723">
+            <useCaseMoniker
+              Id="90b1ebcc-107a-4359-b094-102f63a84c79"
+              LastKnownName="Add subject to timetable (from first week or from specified date/week number) with specifying week day or not"
+              LastKnownLocation="TryUml.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0c48d969-9078-492a-9c4c-739a8784245b"
+        name="add to any free position in week"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="7ab46bac-09c0-4575-abcb-ccce86636efb">
+            <useCaseMoniker
+              Id="89d29b5e-8177-4343-8ff0-6845c39feab7"
+              LastKnownName="view list of nonfull semester subject"
+              LastKnownLocation="TryUml.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5ff0ccf3-7db6-4363-896f-78c34b0977c2"
+        name="DONE!&#xD;&#xA;Specify auditorium from list of free auditoriums"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="e6785d52-a05e-45af-8ee8-681e9d20acfb">
+            <useCaseMoniker
+              Id="90b1ebcc-107a-4359-b094-102f63a84c79"
+              LastKnownName="Add subject to timetable (from first week or from specified date/week number) with specifying week day or not"
+              LastKnownLocation="TryUml.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d37f8fc3-64fa-44e1-834a-c06e2886e340"
+        name="Если лекции чередуются с практикой, то вывести в одном поле через /"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2c288880-5dc9-4817-b493-0dc3cc494dda"
+        name="Make limit of lectures per day"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="9eb5d949-9f1a-4927-8d9f-7a316df3315a"
+            LastKnownName="Restrictions"
+            LastKnownLocation="TryUml.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5caa1c32-0934-4bdc-b9cf-ccffc2670ed3"
+        name="Make edit group button on Groups tab"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="71e8308c-9fcf-4041-b6f2-5b839d0d767d"
+        name="Add and edit teachers"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="9eb5d949-9f1a-4927-8d9f-7a316df3315a"
+        name="Restrictions"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
